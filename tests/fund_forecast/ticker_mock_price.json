@@ -1,0 +1,234 @@
+[
+  {
+    "ticker": "ACB",
+    "price": 27.1
+  },
+  {
+    "ticker": "ACV",
+    "price": 85.3
+  },
+  {
+    "ticker": "ASM",
+    "price": 12.8
+  },
+  {
+    "ticker": "BID",
+    "price": 52.0
+  },
+  {
+    "ticker": "CII",
+    "price": 18.35
+  },
+  {
+    "ticker": "CTD",
+    "price": 70.3
+  },
+  {
+    "ticker": "CTG",
+    "price": 33.65
+  },
+  {
+    "ticker": "CTR",
+    "price": 125.7
+  },
+  {
+    "ticker": "DCM",
+    "price": 33.4
+  },
+  {
+    "ticker": "DGC",
+    "price": 117.9
+  },
+  {
+    "ticker": "DGW",
+    "price": 62.0
+  },
+  {
+    "ticker": "DIG",
+    "price": 32.3
+  },
+  {
+    "ticker": "DPG",
+    "price": 51.2
+  },
+  {
+    "ticker": "DRC",
+    "price": 30.1
+  },
+  {
+    "ticker": "DXG",
+    "price": 19.6
+  },
+  {
+    "ticker": "FPT",
+    "price": 113.8
+  },
+  {
+    "ticker": "FRT",
+    "price": 140.0
+  },
+  {
+    "ticker": "GEX",
+    "price": 23.3
+  },
+  {
+    "ticker": "GIL",
+    "price": 33.4
+  },
+  {
+    "ticker": "GMD",
+    "price": 79.0
+  },
+  {
+    "ticker": "HDC",
+    "price": 32.55
+  },
+  {
+    "ticker": "HDG",
+    "price": 28.55
+  },
+  {
+    "ticker": "HPG",
+    "price": 29.65
+  },
+  {
+    "ticker": "HSG",
+    "price": 22.65
+  },
+  {
+    "ticker": "IDC",
+    "price": 57.5
+  },
+  {
+    "ticker": "KBC",
+    "price": 33.0
+  },
+  {
+    "ticker": "LHG",
+    "price": 35.0
+  },
+  {
+    "ticker": "MBB",
+    "price": 23.8
+  },
+  {
+    "ticker": "MSN",
+    "price": 72.5
+  },
+  {
+    "ticker": "MWG",
+    "price": 52.0
+  },
+  {
+    "ticker": "NKG",
+    "price": 24.8
+  },
+  {
+    "ticker": "NLG",
+    "price": 42.5
+  },
+  {
+    "ticker": "PDR",
+    "price": 31.6
+  },
+  {
+    "ticker": "PNJ",
+    "price": 100.6
+  },
+  {
+    "ticker": "PTB",
+    "price": 64.2
+  },
+  {
+    "ticker": "PVD",
+    "price": 31.8
+  },
+  {
+    "ticker": "PVS",
+    "price": 41.5
+  },
+  {
+    "ticker": "PVT",
+    "price": 27.75
+  },
+  {
+    "ticker": "REE",
+    "price": 62.6
+  },
+  {
+    "ticker": "SHS",
+    "price": 19.8
+  },
+  {
+    "ticker": "SIP",
+    "price": 81.3
+  },
+  {
+    "ticker": "SSI",
+    "price": 36.95
+  },
+  {
+    "ticker": "STB",
+    "price": 29.1
+  },
+  {
+    "ticker": "SZC",
+    "price": 40.9
+  },
+  {
+    "ticker": "TCB",
+    "price": 45.65
+  },
+  {
+    "ticker": "TCH",
+    "price": 16.05
+  },
+  {
+    "ticker": "TNG",
+    "price": 22.1
+  },
+  {
+    "ticker": "TPB",
+    "price": 18.35
+  },
+  {
+    "ticker": "TV2",
+    "price": 37.6
+  },
+  {
+    "ticker": "VCB",
+    "price": 94.5
+  },
+  {
+    "ticker": "VCG",
+    "price": 24.45
+  },
+  {
+    "ticker": "VCI",
+    "price": 50.8
+  },
+  {
+    "ticker": "VDS",
+    "price": 21.3
+  },
+  {
+    "ticker": "VGS",
+    "price": 25.9
+  },
+  {
+    "ticker": "VIB",
+    "price": 22.9
+  },
+  {
+    "ticker": "VIX",
+    "price": 19.2
+  },
+  {
+    "ticker": "VPB",
+    "price": 19.35
+  },
+  {
+    "ticker": "VRE",
+    "price": 24.25
+  }
+]

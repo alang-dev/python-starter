@@ -1,0 +1,350 @@
+[
+  {
+    "ticker": "ACB",
+    "quantity": 732100,
+    "unitPrice": 28500,
+    "percent": 0.0113030702
+  },
+  {
+    "ticker": "ACV",
+    "quantity": 125100,
+    "unitPrice": 84800,
+    "percent": 0.0057469090
+  },
+  {
+    "ticker": "ASM",
+    "quantity": 453100,
+    "unitPrice": 13050,
+    "percent": 0.0032032123
+  },
+  {
+    "ticker": "BID",
+    "quantity": 837038,
+    "unitPrice": 52100,
+    "percent": 0.0236245777
+  },
+  {
+    "ticker": "CII",
+    "quantity": 466800,
+    "unitPrice": 19100,
+    "percent": 0.0048299804
+  },
+  {
+    "ticker": "CTD",
+    "quantity": 276800,
+    "unitPrice": 73000,
+    "percent": 0.0109463695
+  },
+  {
+    "ticker": "CTG",
+    "quantity": 2136626,
+    "unitPrice": 35550,
+    "percent": 0.0411480511
+  },
+  {
+    "ticker": "CTR",
+    "quantity": 105400,
+    "unitPrice": 138300,
+    "percent": 0.0078966692
+  },
+  {
+    "ticker": "DCM",
+    "quantity": 504400,
+    "unitPrice": 35150,
+    "percent": 0.0096046504
+  },
+  {
+    "ticker": "DGC",
+    "quantity": 536800,
+    "unitPrice": 123400,
+    "percent": 0.0358846590
+  },
+  {
+    "ticker": "DGW",
+    "quantity": 290700,
+    "unitPrice": 66100,
+    "percent": 0.0104094467
+  },
+  {
+    "ticker": "DIG",
+    "quantity": 799600,
+    "unitPrice": 32200,
+    "percent": 0.0139479317
+  },
+  {
+    "ticker": "DPG",
+    "quantity": 287500,
+    "unitPrice": 46400,
+    "percent": 0.0072266494
+  },
+  {
+    "ticker": "DRC",
+    "quantity": 468000,
+    "unitPrice": 33500,
+    "percent": 0.0084932091
+  },
+  {
+    "ticker": "DXG",
+    "quantity": 1263833,
+    "unitPrice": 19850,
+    "percent": 0.0135903724
+  },
+  {
+    "ticker": "FPT",
+    "quantity": 1728045,
+    "unitPrice": 116500,
+    "percent": 0.1090591552
+  },
+  {
+    "ticker": "FRT",
+    "quantity": 362800,
+    "unitPrice": 156000,
+    "percent": 0.0306600623
+  },
+  {
+    "ticker": "GEX",
+    "quantity": 266800,
+    "unitPrice": 24900,
+    "percent": 0.0035988714
+  },
+  {
+    "ticker": "GIL",
+    "quantity": 255300,
+    "unitPrice": 38550,
+    "percent": 0.0053315852
+  },
+  {
+    "ticker": "GMD",
+    "quantity": 768000,
+    "unitPrice": 79700,
+    "percent": 0.0331589445
+  },
+  {
+    "ticker": "HDC",
+    "quantity": 166800,
+    "unitPrice": 34950,
+    "percent": 0.0031580891
+  },
+  {
+    "ticker": "HDG",
+    "quantity": 483800,
+    "unitPrice": 29250,
+    "percent": 0.0076660719
+  },
+  {
+    "ticker": "HPG",
+    "quantity": 1868000,
+    "unitPrice": 30250,
+    "percent": 0.0306114151
+  },
+  {
+    "ticker": "HSG",
+    "quantity": 852000,
+    "unitPrice": 23650,
+    "percent": 0.0109157077
+  },
+  {
+    "ticker": "IDC",
+    "quantity": 571400,
+    "unitPrice": 59000,
+    "percent": 0.0182630540
+  },
+  {
+    "ticker": "KBC",
+    "quantity": 806800,
+    "unitPrice": 34950,
+    "percent": 0.0152754575
+  },
+  {
+    "ticker": "LHG",
+    "quantity": 559100,
+    "unitPrice": 36000,
+    "percent": 0.0109036813
+  },
+  {
+    "ticker": "MBB",
+    "quantity": 2798010,
+    "unitPrice": 25400,
+    "percent": 0.0385003019
+  },
+  {
+    "ticker": "MSN",
+    "quantity": 666800,
+    "unitPrice": 74200,
+    "percent": 0.0268028301
+  },
+  {
+    "ticker": "MWG",
+    "quantity": 2085800,
+    "unitPrice": 51100,
+    "percent": 0.0577397261
+  },
+  {
+    "ticker": "NKG",
+    "quantity": 466800,
+    "unitPrice": 25650,
+    "percent": 0.0064863350
+  },
+  {
+    "ticker": "NLG",
+    "quantity": 496800,
+    "unitPrice": 43350,
+    "percent": 0.0116668025
+  },
+  {
+    "ticker": "PDR",
+    "quantity": 1112800,
+    "unitPrice": 31850,
+    "percent": 0.0192002865
+  },
+  {
+    "ticker": "PNJ",
+    "quantity": 742800,
+    "unitPrice": 98900,
+    "percent": 0.0397969091
+  },
+  {
+    "ticker": "PTB",
+    "quantity": 305400,
+    "unitPrice": 65900,
+    "percent": 0.0109027387
+  },
+  {
+    "ticker": "PVD",
+    "quantity": 853000,
+    "unitPrice": 32350,
+    "percent": 0.0149487360
+  },
+  {
+    "ticker": "PVS",
+    "quantity": 507300,
+    "unitPrice": 39200,
+    "percent": 0.0107728865
+  },
+  {
+    "ticker": "PVT",
+    "quantity": 326800,
+    "unitPrice": 28650,
+    "percent": 0.0050721003
+  },
+  {
+    "ticker": "REE",
+    "quantity": 251300,
+    "unitPrice": 63800,
+    "percent": 0.0086854900
+  },
+  {
+    "ticker": "SHS",
+    "quantity": 1486800,
+    "unitPrice": 20100,
+    "percent": 0.0161893632
+  },
+  {
+    "ticker": "SIP",
+    "quantity": 73700,
+    "unitPrice": 94000,
+    "percent": 0.0037529821
+  },
+  {
+    "ticker": "SSI",
+    "quantity": 518000,
+    "unitPrice": 38500,
+    "percent": 0.0108036783
+  },
+  {
+    "ticker": "STB",
+    "quantity": 1414200,
+    "unitPrice": 31600,
+    "percent": 0.0242091238
+  },
+  {
+    "ticker": "SZC",
+    "quantity": 800000,
+    "unitPrice": 44000,
+    "percent": 0.0190688200
+  },
+  {
+    "ticker": "TCB",
+    "quantity": 2346800,
+    "unitPrice": 47550,
+    "percent": 0.0604515940
+  },
+  {
+    "ticker": "TCH",
+    "quantity": 500000,
+    "unitPrice": 15700,
+    "percent": 0.0042525636
+  },
+  {
+    "ticker": "TNG",
+    "quantity": 668000,
+    "unitPrice": 22200,
+    "percent": 0.0080336072
+  },
+  {
+    "ticker": "TPB",
+    "quantity": 796800,
+    "unitPrice": 19100,
+    "percent": 0.0082444910
+  },
+  {
+    "ticker": "TV2",
+    "quantity": 216800,
+    "unitPrice": 43650,
+    "percent": 0.0051265439
+  },
+  {
+    "ticker": "VCB",
+    "quantity": 320000,
+    "unitPrice": 94900,
+    "percent": 0.0164511911
+  },
+  {
+    "ticker": "VCG",
+    "quantity": 133900,
+    "unitPrice": 25500,
+    "percent": 0.0018497026
+  },
+  {
+    "ticker": "VCI",
+    "quantity": 426100,
+    "unitPrice": 53800,
+    "percent": 0.0124186666
+  },
+  {
+    "ticker": "VDS",
+    "quantity": 698000,
+    "unitPrice": 22650,
+    "percent": 0.0085645547
+  },
+  {
+    "ticker": "VGS",
+    "quantity": 93900,
+    "unitPrice": 26700,
+    "percent": 0.0013581821
+  },
+  {
+    "ticker": "VIB",
+    "quantity": 627600,
+    "unitPrice": 24600,
+    "percent": 0.0083637145
+  },
+  {
+    "ticker": "VIX",
+    "quantity": 150000,
+    "unitPrice": 20550,
+    "percent": 0.0016698761
+  },
+  {
+    "ticker": "VPB",
+    "quantity": 622000,
+    "unitPrice": 19750,
+    "percent": 0.0066548557
+  },
+  {
+    "ticker": "VRE",
+    "quantity": 368000,
+    "unitPrice": 25850,
+    "percent": 0.0051533486
+  }
+]
