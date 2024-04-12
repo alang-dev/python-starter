@@ -1,0 +1,30 @@
+name: python-starter CI
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.12 ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Set up environment variable
+        run: echo "FIREANT_TOKEN=${{ secrets.FIREANT_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Run unit tests
+        run: |
+          python -m unittest discover -s tests -v
