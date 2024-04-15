@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2024-04-15",
+    "symbol": "XYZ",
+    "priceHigh": 100.0,
+    "priceLow": 50.0,
+    "priceOpen": 75.0,
+    "priceAverage": 80.0,
+    "priceClose": 90.0,
+    "priceBasic": 85.0,
+    "totalVolume": 1000000,
+    "dealVolume": 500000,
+    "putthroughVolume": 300000,
+    "totalValue": 100000000,
+    "putthroughValue": 50000000,
+    "buyForeignQuantity": 200000,
+    "buyForeignValue": 10000000,
+    "sellForeignQuantity": 150000,
+    "sellForeignValue": 7500000,
+    "buyCount": 1000,
+    "buyQuantity": 20000,
+    "sellCount": 800,
+    "sellQuantity": 18000,
+    "adjRatio": 1.5,
+    "currentForeignRoom": 20000000,
+    "propTradingNetDealValue": 5000000,
+    "propTradingNetPTValue": 2500000,
+    "propTradingNetValue": 7500000,
+    "unit": "shares"
+  }
+]

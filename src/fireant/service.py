@@ -1,4 +1,4 @@
-import http.client
+from http.client import HTTPSConnection
 import json
 import os
 import ssl
@@ -13,14 +13,14 @@ context = ssl.create_default_context()
 context.check_hostname = False
 context.verify_mode = ssl.CERT_NONE
 
-conn = http.client.HTTPSConnection("restv2.fireant.vn", context=context)
-token = os.getenv('FIREANT_TOKEN')
-headers = {
-	'authorization': f'Bearer {token}',
-}
-
 
 def get_history_quotes(ticker: str, start_date: date, end_date: date) -> List[HistoryQuote]:
+	conn = HTTPSConnection("restv2.fireant.vn", context=context)
+	token = os.getenv('FIREANT_TOKEN')
+	headers = {
+		'authorization': f'Bearer {token}',
+	}
+
 	params = {
 		'startDate': start_date,
 		'endDate': end_date,
