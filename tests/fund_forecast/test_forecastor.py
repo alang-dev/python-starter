@@ -13,22 +13,21 @@ from src.fund.forecaster import forecast
 
 
 class FundForecastTest(unittest.TestCase):
-	def setUp(self):
+	@classmethod
+	def setUpClass(cls):
 		current_directory = os.path.dirname(__file__)
 
 		dcds_file = open(os.path.join(current_directory, 'dcds.json'))
-		self.allocations: List[Allocation] = [Allocation(**json_dic) for json_dic in json.load(dcds_file)]
+		cls.allocations: List[Allocation] = [Allocation(**json_dic) for json_dic in json.load(dcds_file)]
 		dcds_file.close()
 
 		tickers_file = open(os.path.join(current_directory, 'ticker_mock_price.json'))
-		self.tickers_latest_prices = {item["ticker"]: item["price"] for item in json.load(tickers_file)}
+		cls.tickers_latest_prices = {item["ticker"]: item["price"] for item in json.load(tickers_file)}
 		tickers_file.close()
 
-	@patch('src.fund.forecaster.date')
-	@patch('src.fund.forecaster.get_history_quotes')
-	@patch('src.fund.forecaster.get_nav_history')
-	def test_forecast_fund_price(self, get_nav_history_mock, get_history_quotes_mock, date_mock):
-		get_nav_history_mock.return_value = [
+	def setUp(self):
+		self.get_nav_history_mock = patch('src.fund.forecaster.get_nav_history').start()
+		self.get_nav_history_mock.return_value = [
 			NavDaily(
 				{
 					"id": 26097,
@@ -48,17 +47,22 @@ class FundForecastTest(unittest.TestCase):
 				}
 			)
 		]
-		get_history_quotes_mock.side_effect = lambda *args: [HistoryQuote({
+
+		self.get_history_quotes_mock = patch('src.fund.forecaster.get_history_quotes').start()
+		self.get_history_quotes_mock.side_effect = lambda *args: [HistoryQuote({
 			'priceClose': self.tickers_latest_prices.get(args[0]),
 			'symbol': args[0]
 		})]
-		date_mock.today.return_value = date.fromisoformat('2024-04-10')
 
+		self.date_mock = patch('src.fund.forecaster.date').start()
+		self.date_mock.today.return_value = date.fromisoformat('2024-04-10')
+
+	def test_forecast_fund_price(self):
 		reported_date = date.fromisoformat("2023-03-31")
 		actual = forecast(self.allocations, reported_date, FundID.DCDS)
 
-		self.assertEqual(len(self.allocations), get_history_quotes_mock.call_count)
-		self.assertEqual(1, get_nav_history_mock.call_count)
+		self.assertEqual(len(self.allocations), self.get_history_quotes_mock.call_count)
+		self.assertEqual(1, self.get_nav_history_mock.call_count)
 
 		self.assertEqual(71.6893913282321, actual)
 
