@@ -1,5 +1,4 @@
-import http.client
-import http.client
+from http.client import HTTPSConnection
 import json
 import ssl
 from datetime import date
@@ -13,10 +12,9 @@ context = ssl.create_default_context()
 context.check_hostname = False
 context.verify_mode = ssl.CERT_NONE
 
-conn = http.client.HTTPSConnection("api.fmarket.vn", context=context)
-
 
 def get_nav_history(ticker: FundID, start_date: date, end_date: date) -> List[NavDaily]:
+	conn = HTTPSConnection("api.fmarket.vn", context=context)
 	payload = {
 		"isAllData": 1,
 		"productId": ticker.value,
