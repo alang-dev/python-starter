@@ -6,6 +6,7 @@ import urllib.parse
 from datetime import date
 from typing import List
 
+from src.decorators.log_time import log_time
 from src.fireant.HistoryQuote import HistoryQuote
 
 # Disable SSL certificate verification
@@ -14,6 +15,7 @@ context.check_hostname = False
 context.verify_mode = ssl.CERT_NONE
 
 
+@log_time
 def get_history_quotes(ticker: str, start_date: date, end_date: date) -> List[HistoryQuote]:
 	conn = HTTPSConnection("restv2.fireant.vn", context=context)
 	token = os.getenv('FIREANT_TOKEN')
