@@ -58,7 +58,7 @@ class FundForecastTest(unittest.TestCase):
 		self.date_mock.today.return_value = date.fromisoformat('2024-04-10')
 
 	def test_forecast_fund_price(self):
-		reported_date = date.fromisoformat("2023-03-31")
+		reported_date = date.fromisoformat("2023-03-30")
 		actual = forecast(self.allocations, reported_date, FundID.DCDS)
 
 		self.assertEqual(len(self.allocations), self.get_history_quotes_mock.call_count)
