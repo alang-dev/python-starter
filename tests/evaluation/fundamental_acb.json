@@ -1,0 +1,24 @@
+[
+  {
+    "symbol": null,
+    "companyType": 1,
+    "sharesOutstanding": 3884050358,
+    "freeShares": 2915122402,
+    "beta": 0.96,
+    "dividend": 0,
+    "dividendYield": 0,
+    "marketCap": 103898347076500,
+    "low52Week": 20006.16,
+    "high52Week": 28950,
+    "priceChange1y": 0.32302,
+    "avgVolume10d": 9967700,
+    "avgVolume3m": 10930566,
+    "pe": 6.4755422902012105,
+    "eps": 4130.92816033,
+    "sales_TTM": 57292547000000,
+    "netProfit_TTM": 16044733000000,
+    "insiderOwnership": 0.04817347,
+    "institutionOwnership": 0.26655527,
+    "foreignOwnership": 0.3
+  }
+]
