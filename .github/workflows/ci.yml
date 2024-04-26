@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+  push:
+    branches:
+      - master
+
 jobs:
   test:
     name: Unit Tests
@@ -23,12 +27,14 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
+        env:
+          cache-name: 'dependencies-cache'
         with:
           path: ~/.cache/pip
-          key: "${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}"
+          key: "${{ runner.os }}-pip-${{ env.cache-name }}-${{ hashFiles('requirements.txt') }}"
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${{ runner.os }}-pip-${{ env.cache-name }}-
 
       - name: Install dependencies
         run: |
@@ -40,9 +46,3 @@ jobs:
       - name: Run unit tests
         run: |
           python -m unittest discover -s tests -v
-
-      - name: Save cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: "${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}"

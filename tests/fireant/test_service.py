@@ -47,8 +47,10 @@ class FireantServiceTest(unittest.TestCase):
 		start_date = date.fromisoformat('2024-01-01')
 		end_date = date.fromisoformat('2024-01-04')
 
-		with self.assertRaisesRegex(ValueError, "Cannot query stock history quote"):
+		with self.assertRaises(ValueError) as context:
 			get_history_quotes(ticker, start_date, end_date)
+
+		self.assertEqual(str(context.exception), "[500]: Send request fail")
 
 
 if __name__ == '__main__':
