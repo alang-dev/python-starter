@@ -5,36 +5,41 @@ stocks. This involves data analysis of historical financial data, implementation
 visualization of the DCF valuation results.
 
 - [ ] **Python Basics**
-    - [ ] Variables and Data Types
-    - [ ] Control Flow (if statements, loops)
-    - [ ] Functions
-    - [ ] Lists, Tuples, Set and Dictionaries
-    - [ ] Error Handling
+    - [x] Variables and Data Types
+    - [x] Control Flow (if statements, loops)
+    - [x] Functions
+    - [x] Lists, Tuples, Set and Dictionaries
+    - [x] Error Handling
     - [ ] File Handling
 - [ ] **Object-Oriented Programming (OOP)**
-    - [ ] Classes and Objects
+    - [x] Classes and Objects
     - [ ] Inheritance
     - [ ] Polymorphism
     - [ ] Encapsulation
 - [ ] **Python Standard Library**
     - [ ] os and shutil
     - [ ] sys and argparse
-    - [ ] datetime and time
-    - [ ] math and random
-- [ ] **Python Data Science Libraries**
-    - [ ] NumPy
-    - [ ] Pandas
-    - [ ] Matplotlib
-    - [ ] Seaborn
+    - [x] datetime and time
+    - [x] math and random
+  
+- [ ] **Testing and Debugging**
+  - [x] Unit Testing with unittest
+- 
+- [ ] **Advanced Topics**
+  - [ ] Asynchronous Programming with async/await
+  - [x] Decorators
+  - [ ] Generators
+  - [ ] Context Managers
+  
 - [ ] **Web Development with Python**
     - [ ] FastAPI
     - [ ] SQLAlchemy
-- [ ] **Testing and Debugging**
-    - [ ] Unit Testing with unittest
-- [ ] **Advanced Topics**
-    - [ ] Asynchronous Programming with async/await
-    - [ ] Decorators and Generators
-    - [ ] Context Managers
+  
 
+- [ ] **Python Data Science Libraries**
+  - [ ] NumPy
+  - [ ] Pandas
+  - [ ] Matplotlib
+  
 - [ ] **Practice and Review**
     - [ ] Interview questions
