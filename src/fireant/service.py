@@ -1,9 +1,9 @@
-from http.client import HTTPSConnection
 import json
 import os
 import ssl
 import urllib.parse
 from datetime import date
+from http.client import HTTPSConnection
 from typing import List
 
 from src.decorators.log_time import log_time
@@ -28,7 +28,6 @@ def build_headers() -> dict:
 	}
 
 
-@log_time
 def get_history_quotes(ticker: str, start_date: date, end_date: date) -> List[HistoryQuote]:
 	params = {
 		'startDate': start_date,
@@ -39,19 +38,10 @@ def get_history_quotes(ticker: str, start_date: date, end_date: date) -> List[Hi
 	encoded_params = urllib.parse.urlencode(params)
 	url = f"/symbols/{ticker}/historical-quotes?{encoded_params}"
 
-	conn = get_connection()
-	conn.request("GET", url, headers=build_headers())
-
-	response = conn.getresponse()
-
-	if response.status == 200:
-		data = json.loads(response.read())
-		return [HistoryQuote(quote_data) for quote_data in data]
-	else:
-		raise ValueError("Cannot query stock history quote")
+	data = send_get(url)
+	return [HistoryQuote(report) for report in data]
 
 
-@log_time
 def get_full_financial_reports(ticker: str, params: dict) -> List[FinancialReport]:
 	"""
 	Retrieve full financial reports for a given ticker.
@@ -60,29 +50,31 @@ def get_full_financial_reports(ticker: str, params: dict) -> List[FinancialRepor
 	:return: [FinancialReport]
 	"""
 	url = f"/symbols/{ticker}/full-financial-reports?{urllib.parse.urlencode(params)}"
-
-	conn = get_connection()
-	conn.request("GET", url, headers=build_headers())
-
-	response = conn.getresponse()
-
-	if response.status == 200:
-		data = json.loads(response.read())
-		return [FinancialReport(report) for report in data]
-	else:
-		raise ValueError("Cannot query full financial reports")
+	data = send_get(url)
+	return [FinancialReport(report) for report in data]
 
 
 def get_fundamental(ticker: str) -> FundamentalInfo:
 	url = f"/symbols/{ticker}/fundamental"
+	dict_data = send_get(url)
 
+	return FundamentalInfo(dict_data)
+
+
+@log_time
+def send_get(url: str, err_msg: str = None) -> dict:
 	conn = get_connection()
-	conn.request("GET", url, headers=build_headers())
 
-	response = conn.getresponse()
+	try:
+		conn.request("GET", url, headers=build_headers())
 
-	if response.status == 200:
-		data = json.loads(response.read())
-		return FundamentalInfo(data)
-	else:
-		raise ValueError("Cannot query full financial reports")
+		response = conn.getresponse()
+
+		if response.status == 200:
+			result = json.loads(response.read())
+		else:
+			raise ValueError(f"[{response.status}]: Send request fail" if err_msg is None else err_msg)
+	finally:
+		conn.close()
+
+	return result
