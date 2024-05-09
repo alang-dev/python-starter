@@ -1,5 +1,7 @@
 **python-starter**
 
+[![codecov](https://codecov.io/github/alang-dev/python-starter/branch/master/graph/badge.svg?token=NWTJDTWMIX)](https://codecov.io/github/alang-dev/python-starter)
+
 The goal of this project is to learn Python by illustrating a Discounted Cash Flow (DCF) model for Vietnamese
 stocks. This involves data analysis of historical financial data, implementation of financial modeling concepts, and
 visualization of the DCF valuation results.
