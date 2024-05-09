@@ -1,0 +1,12 @@
+[run]
+source = src
+
+[report]
+exclude_lines =
+    # Exclude any line containing a `pragma: no cover` comment
+    pragma: no cover
+    # Exclude the if __name__ == '__main__': clause, as it will not be executed during testing
+    if __name__ == .__main__.:
+omit =
+    */__init__.py
+    */__init__.py*
